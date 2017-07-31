@@ -1,0 +1,13 @@
+D:\Projects\PowerShellScripts\DavidZambrano(PDFs)\Libraries\PDFsharp\code\PdfSharp\bin\Debug\PdfSharp.xml
+D:\Projects\PowerShellScripts\DavidZambrano(PDFs)\Libraries\PDFsharp\code\PdfSharp\bin\Debug\PdfSharp.dll
+D:\Projects\PowerShellScripts\DavidZambrano(PDFs)\Libraries\PDFsharp\code\PdfSharp\bin\Debug\PdfSharp.pdb
+D:\Projects\PowerShellScripts\DavidZambrano(PDFs)\Libraries\PDFsharp\code\PdfSharp\bin\Debug\de\PdfSharp.resources.dll
+D:\Projects\PowerShellScripts\DavidZambrano(PDFs)\Libraries\PDFsharp\code\PdfSharp\obj\Debug\PdfSharp.csprojResolveAssemblyReference.cache
+D:\Projects\PowerShellScripts\DavidZambrano(PDFs)\Libraries\PDFsharp\code\PdfSharp\obj\Debug\PdfSharp.Forms.PagePreview.resources
+D:\Projects\PowerShellScripts\DavidZambrano(PDFs)\Libraries\PDFsharp\code\PdfSharp\obj\Debug\PdfSharp.Forms.PagePreviewCanvas.resources
+D:\Projects\PowerShellScripts\DavidZambrano(PDFs)\Libraries\PDFsharp\code\PdfSharp\obj\Debug\PdfSharp.Resources.Messages.resources
+D:\Projects\PowerShellScripts\DavidZambrano(PDFs)\Libraries\PDFsharp\code\PdfSharp\obj\Debug\PdfSharp.Resources.Messages.de.resources
+D:\Projects\PowerShellScripts\DavidZambrano(PDFs)\Libraries\PDFsharp\code\PdfSharp\obj\Debug\PdfSharp.csproj.GenerateResource.Cache
+D:\Projects\PowerShellScripts\DavidZambrano(PDFs)\Libraries\PDFsharp\code\PdfSharp\obj\Debug\de\PdfSharp.resources.dll
+D:\Projects\PowerShellScripts\DavidZambrano(PDFs)\Libraries\PDFsharp\code\PdfSharp\obj\Debug\PdfSharp.dll
+D:\Projects\PowerShellScripts\DavidZambrano(PDFs)\Libraries\PDFsharp\code\PdfSharp\obj\Debug\PdfSharp.pdb
