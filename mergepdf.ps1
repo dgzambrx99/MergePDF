@@ -12,6 +12,7 @@
 
 Param (
 	[string]$Path = "\\afs1\ScannedInvoices",
+	[string]$PrintPath = "pathToFolderYouWantToPrint",
 	[string[]]$Exclude = @('Space Exploration Technologies (Spacex)'),
 	[string]$SMTPServer = "192.187.218.190",
 	[string]$From = "mailbox@astro.local",
@@ -23,7 +24,7 @@ Param (
 Start-Transcript -path 'C:\Users\administrator.ASTRO\Documents\InvoiceProcessor\logfile.log' -append
 
 # Import libraries.
-Add-Type -Path .\Libraries\PDFsharp\code\PdfSharp\bin\Debug\PdfSharp.dll
+Add-Type -Path $PSScriptRoot\Libraries\PDFsharp\code\PdfSharp\bin\Debug\PdfSharp.dll
 
 # This function merges all pdfs in myfolderpath and saves it to foldername, then deletes the processed pdfs.
 # Merge-PDF "FullSystemPath" "FileName"
@@ -73,6 +74,14 @@ Get-ChildItem -Exclude $Exclude -Path $Path | Sort-Object name | ?{$_.PSIsContai
 	$filename = $filename + " $(Get-Date -Format MM-dd-yyyy)"
 	Merge-PDF $filepath $filename
 } | Sort-Object $_.FullName
+
+# v2 Combines pdfs in print path and prints the combined pdf. -LI
+$filename = Split-Path $PrintPath -Leaf
+$filename = $filename + " $(Get-Date -Format MM-dd-yyyy)"
+Merge-PDF $PrintPath $filename
+$filepath = $PrintPath + "\" + $filename + ".pdf"
+Write-Host "Printing file $($filepath)..."
+Start-Process -FilePath $filepath -Verb Print
 
 # v2 Creates a clickable e-mail of folders with pdfs in the directory, name sort?? -DZ
 $File = Get-ChildItem -Exclude $Exclude -Path $Path | Sort-Object name | ?{$_.PSIsContainer -and $_.GetFiles("*.pdf").Count}
